@@ -15,6 +15,11 @@ h1 {
   letter-spacing: -3px;
   line-height: 1;
   margin: 0 0 20px;
+
+  @media (max-width: 639px) {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
 }
 
 a:hover {
@@ -259,12 +264,14 @@ footer {
 
     @media (max-width: 639px) {
       padding: 0; //test
+      width: 100%;
+      text-align: center;
     }
 
     a {
       background: $default-color;
       border: solid 2px transparent;
-      margin-top: 15px;
+      //margin-top: 15px;
 
       font-size: 20px;
       line-height: 2;
@@ -279,6 +286,9 @@ footer {
   }
 
   .tm-button-select {
+    @media (max-width: 639px) {
+      width: 100%;
+    }
     a {
       background: $default-color;
       border: solid 2px $global-color;
