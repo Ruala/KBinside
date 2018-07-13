@@ -7,6 +7,16 @@ body {
   color: $global-color;
 }
 
+h1 {
+  font-family: $thin-font-family;
+  font-weight: bold;
+  color: $default-color;
+  font-size: 56px;
+  letter-spacing: -3px;
+  line-height: 1;
+  //margin: 0 0 20px;
+}
+
 header {
 
   h4, span {
@@ -17,7 +27,7 @@ header {
   }
 
   .uk-navbar-nav {
-    margin: -10px 0 0 -40px;
+    margin: -10px 0 0 40px;
 
     a {
       margin: 0 19px 0 0;
@@ -32,6 +42,7 @@ header {
         color: $default-color;
         text-transform: uppercase;
         line-height: 1.2;
+        transform: skew(-15deg);
       }
     }
   }
@@ -47,6 +58,39 @@ header {
 
 .tm-background-default {
   background-color: $default-color;
+}
+
+.tm-pageheader {
+  background: rgba(58,57,135,0.65);
+  padding-left: 0;
+
+  .uk-subnav {
+    margin-left: 0;
+  }
+
+  ul {
+    background: $primary-color;
+  }
+  span {
+    font-family: $black-font-family;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}
+
+.uk-light .uk-subnav>*>:first-child, .uk-subnav>*>:first-child {
+    color: $default-color;
+}
+
+.tm-button-secondary{
+  background-color: #f8b523;
+
+  font-family: $black-font-family;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 2px;
 }
 
 .tm-font-large {
