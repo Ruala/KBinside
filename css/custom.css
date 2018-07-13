@@ -53,6 +53,9 @@ header .uk-navbar-nav {
       text-transform: uppercase;
       line-height: 1.2; }
 
+.uk-width-large {
+  width: 560px; }
+
 .tm-background-primary {
   background-color: #3a3987; }
 
@@ -61,8 +64,5 @@ header .uk-navbar-nav {
 
 .tm-font-large {
   font-size: 18px; }
-
-.uk-width-large {
-  width: 560px; }
 
 /*# sourceMappingURL=custom.css.map */

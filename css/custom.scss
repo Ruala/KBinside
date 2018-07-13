@@ -37,6 +37,10 @@ header {
   }
 }
 
+.uk-width-large {
+  width: 560px;
+}
+
 .tm-background-primary {
   background-color: $primary-color;
 }
@@ -49,6 +53,3 @@ header {
   font-size: $large-font-size;
 }
 
-.uk-width-large {
-  width: 560px;
-}
