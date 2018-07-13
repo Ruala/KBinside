@@ -23,11 +23,11 @@ a:hover {
 
 header, footer {
 
-  h4 {
-    font-family: $black-font-family;
-    font-size: 13px;
-    color: $secondary-color;
-    text-transform: uppercase;
+    h4 {
+      font-family: $black-font-family;
+      font-size: 13px;
+      color: $secondary-color;
+      text-transform: uppercase;
   }
 
   span {
@@ -37,6 +37,7 @@ header, footer {
 }
 
 header {
+  overflow: hidden;
 
   span {
     font-family: $black-font-family;
@@ -70,6 +71,11 @@ header {
       }
     }
   }
+
+  .uk-logo {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
 footer {
@@ -79,9 +85,8 @@ footer {
     font-size: 18px;
   }
 }
-
 .tm-margin-overtop {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .tm-z-1000 {
@@ -100,26 +105,23 @@ footer {
   background-color: $default-color;
 }
 
+.tm-after-full {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    background-color: $default-color;
+  }
+}
+
 .tm-pageheader {
   background: rgba(58, 57, 135, 0.65);
-  padding-left: 0;
-
-  .tm-subnav-divider {
-    li:after {
-        content: '\f111';
-        font-family: $awesome-font-family;
-        font-size: 10px;
-        position: absolute;
-        right: -15px;
-        top: 7px;
-        color: $secondary-color;
-      }
-    }
-
-  .tm-subnav-divider>* {
-    display: flex;
-    align-items: center;
-  }
 
   .uk-subnav {
     margin-left: 0;
@@ -163,7 +165,6 @@ footer {
 
 .tm-button-secondary {
   background-color: $secondary-color;
-  padding: 10px 30px;
 
   font-family: $black-font-family;
   font-size: 14px;
@@ -225,10 +226,6 @@ footer {
         color: $default-color;
         border: none;
       }
-
-      @media (max-width: 1199px) {
-        height: 50px;
-      }
     }
 
     &.uk-active {
@@ -268,10 +265,7 @@ footer {
       color: $global-color;
       text-transform: none;
 
-      &:hover, &:focus {
-        background: $secondary-color;
-        border: solid 2px $secondary-color;
-      }
+
     }
 
     &.uk-active {
@@ -279,20 +273,27 @@ footer {
         background: $secondary-color;
         border: solid 2px $secondary-color;
       }
+
     }
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+  .tm-margin-overtop {
+    margin-top: 0;
   }
 }
 
-.tm-copyright {
-  background: #272640;
-  padding: 5px 0;
+@media (max-width: 639px) {
 
-  font-family: $thin-font-family;
-  font-size: 14px;
-  color: #bbb;
+  .tm-after-full::after {
+    display: none;
+  }
 
-  a {
-    font-family: $semibold-font-family;
-    color: #efefef;
+  .tm-slider-container{
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
