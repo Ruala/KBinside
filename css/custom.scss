@@ -85,6 +85,7 @@ footer {
     font-size: 18px;
   }
 }
+
 .tm-margin-overtop {
   margin-top: -70px;
 }
@@ -122,6 +123,14 @@ footer {
 
 .tm-pageheader {
   background: rgba(58, 57, 135, 0.65);
+
+  .tm-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before {
+    content: '\f111';
+    font-family: $awesome-font-family;
+    font-size: 10px;
+    color: #f8b523;
+    border: none;
+  }
 
   .uk-subnav {
     margin-left: 0;
@@ -164,6 +173,7 @@ footer {
 }
 
 .tm-button-secondary {
+  padding: 10px 30px;
   background-color: $secondary-color;
 
   font-family: $black-font-family;
@@ -226,6 +236,10 @@ footer {
         color: $default-color;
         border: none;
       }
+
+      @media (max-width: 1199px) {
+        height: 50px;
+      }
     }
 
     &.uk-active {
@@ -251,6 +265,11 @@ footer {
       line-height: 2;
       color: #666666;
       text-transform: none;
+
+      &:hover, &:focus {
+        background: $secondary-color;
+        border: solid 2px $secondary-color;
+      }
     }
   }
 
@@ -265,7 +284,10 @@ footer {
       color: $global-color;
       text-transform: none;
 
-
+      &:hover, &:focus {
+        background: $secondary-color;
+        border: solid 2px $secondary-color;
+      }
     }
 
     &.uk-active {
@@ -273,10 +295,22 @@ footer {
         background: $secondary-color;
         border: solid 2px $secondary-color;
       }
-
     }
   }
+}
 
+.tm-copyright {
+  background: #272640;
+  padding: 5px 0;
+
+  font-family: $thin-font-family;
+  font-size: 14px;
+  color: #bbb;
+
+  a {
+    font-family: $semibold-font-family;
+    color: #efefef;
+  }
 }
 
 @media (max-width: 1199px) {

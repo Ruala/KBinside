@@ -117,6 +117,12 @@ footer {
 
 .tm-pageheader {
   background: rgba(58, 57, 135, 0.65); }
+  .tm-pageheader .tm-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before {
+    content: '\f111';
+    font-family: "FontAwesome";
+    font-size: 10px;
+    color: #f8b523;
+    border: none; }
   .tm-pageheader .uk-subnav {
     margin-left: 0; }
   .tm-pageheader .uk-subnav > * {
@@ -145,6 +151,7 @@ footer {
     color: #ffffff; }
 
 .tm-button-secondary {
+  padding: 10px 30px;
   background-color: #f8b523;
   font-family: "nerisblack", sans-serif;
   font-size: 14px;
@@ -186,6 +193,9 @@ footer {
   .tm-tab li a:hover {
     color: #ffffff;
     border: none; }
+  @media (max-width: 1199px) {
+    .tm-tab li a {
+      height: 50px; } }
 .tm-tab li.uk-active a {
   background-color: #ffffff;
   border: none;
@@ -199,6 +209,9 @@ footer {
   line-height: 2;
   color: #666666;
   text-transform: none; }
+  .tm-switcher-trailers .tm-reset-all a:hover, .tm-switcher-trailers .tm-reset-all a:focus {
+    background: #f8b523;
+    border: solid 2px #f8b523; }
 .tm-switcher-trailers .tm-button-select a {
   background: #ffffff;
   border: solid 2px #000000;
@@ -207,9 +220,22 @@ footer {
   line-height: 2;
   color: #000000;
   text-transform: none; }
+  .tm-switcher-trailers .tm-button-select a:hover, .tm-switcher-trailers .tm-button-select a:focus {
+    background: #f8b523;
+    border: solid 2px #f8b523; }
 .tm-switcher-trailers .tm-button-select.uk-active a {
   background: #f8b523;
   border: solid 2px #f8b523; }
+
+.tm-copyright {
+  background: #272640;
+  padding: 5px 0;
+  font-family: "neristhin", sans-serif;
+  font-size: 14px;
+  color: #bbb; }
+  .tm-copyright a {
+    font-family: "nerissemibold", sans-serif;
+    color: #efefef; }
 
 @media (max-width: 1199px) {
   .tm-margin-overtop {
