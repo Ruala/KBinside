@@ -256,6 +256,11 @@ footer {
 .tm-switcher-trailers {
 
   .tm-reset-all {
+
+    @media (max-width: 639px) {
+      padding: 0; //test
+    }
+
     a {
       background: $default-color;
       border: solid 2px transparent;
@@ -329,5 +334,12 @@ footer {
   .tm-slider-container{
     max-width: 100%;
     box-sizing: border-box;
+  }
+}
+
+.tm-flex-column {
+  @media (max-width: 639px) {
+    flex-direction: column;
+    align-items: center;
   }
 }

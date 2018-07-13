@@ -201,6 +201,9 @@ footer {
   border: none;
   color: #3a3987; }
 
+@media (max-width: 639px) {
+  .tm-switcher-trailers .tm-reset-all {
+    padding: 0; } }
 .tm-switcher-trailers .tm-reset-all a {
   background: #ffffff;
   border: solid 2px transparent;
@@ -247,5 +250,9 @@ footer {
   .tm-slider-container {
     max-width: 100%;
     box-sizing: border-box; } }
+@media (max-width: 639px) {
+  .tm-flex-column {
+    flex-direction: column;
+    align-items: center; } }
 
 /*# sourceMappingURL=custom.css.map */
