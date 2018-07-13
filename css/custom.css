@@ -148,7 +148,8 @@ header .uk-navbar-nav {
   font-size: 16px;
   color: #ffffff;
   line-height: 2;
-  border: none; }
+  border: none;
+  outline: none; }
   .tm-tab li a:hover {
     color: #ffffff;
     border: none; }
