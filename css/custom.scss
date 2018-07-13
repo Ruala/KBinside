@@ -104,7 +104,6 @@ header {
 .tm-button-primary {
   background-color: $primary-color;
   padding: 5px 10px;
-  margin: 5px 15px 0 10px;
 
   font-family: $semibold-font-family;
   font-size: $global-font-size;
@@ -161,21 +160,31 @@ header {
 }
 
 .tm-tab {
+
+  &::before {
+    display: none;
+  }
+
   li {
-    height: 100px;
-    cursor: pointer;
 
     a {
+      height: 100px;
       font-family: $semibold-font-family;
       font-size: $global-font-size;
       color: $default-color;
       line-height: 2;
+      border: none;
+      &:hover {
+        color: $default-color;
+        border: none;
+      }
     }
 
     &.uk-active {
-      background-color: $default-color;
+
 
       a {
+        background-color: $default-color;
         border: none;
         color: $primary-color;
       }

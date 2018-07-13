@@ -103,7 +103,6 @@ header .uk-navbar-nav {
 .tm-button-primary {
   background-color: #3a3987;
   padding: 5px 10px;
-  margin: 5px 15px 0 10px;
   font-family: "nerissemibold", sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -141,17 +140,21 @@ header .uk-navbar-nav {
   font-family: "nerisblack", sans-serif;
   font-size: 21px; }
 
-.tm-tab li {
+.tm-tab::before {
+  display: none; }
+.tm-tab li a {
   height: 100px;
-  cursor: pointer; }
-  .tm-tab li a {
-    font-family: "nerissemibold", sans-serif;
-    font-size: 16px;
-    color: #ffffff; }
-  .tm-tab li.uk-active {
-    background-color: #ffffff; }
-    .tm-tab li.uk-active a {
-      border: none;
-      color: #3a3987; }
+  font-family: "nerissemibold", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 2;
+  border: none; }
+  .tm-tab li a:hover {
+    color: #ffffff;
+    border: none; }
+.tm-tab li.uk-active a {
+  background-color: #ffffff;
+  border: none;
+  color: #3a3987; }
 
 /*# sourceMappingURL=custom.css.map */
