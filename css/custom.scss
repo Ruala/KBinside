@@ -17,12 +17,29 @@ h1 {
   margin: 0 0 20px;
 }
 
-header {
+a:hover {
+  text-decoration: none;
+}
 
-  h4, span {
-    font-family: $black-font-family;
+header, footer {
+
+    h4 {
+      font-family: $black-font-family;
+      font-size: 13px;
+      color: $secondary-color;
+      text-transform: uppercase;
+  }
+
+  span {
     font-size: 13px;
     color: $secondary-color;
+  }
+}
+
+header {
+
+  span {
+    font-family: $black-font-family;
     text-transform: uppercase;
   }
 
@@ -55,6 +72,13 @@ header {
   }
 }
 
+footer {
+  font-size: 21px;
+
+  span {
+    font-size: 18px;
+  }
+}
 .tm-margin-overtop {
   margin-top: -50px;
 }
