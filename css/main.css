@@ -1006,7 +1006,7 @@ footer #logo {
 	    background: #3a3987;
 	    top: 0;
 	    left: -10px;
-	    bottom: 10;
+	    bottom: 10px;
 	    width: 22px;
 	    -webkit-transform: skew(15deg);
 	    -moz-transform: skew(15deg);
@@ -4642,7 +4642,7 @@ input:focus, textarea:focus {
 
 
 
-    width: 100#;
+    width: 100%;
 
 
 
