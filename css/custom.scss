@@ -354,3 +354,13 @@ footer {
     align-items: center;
   }
 }
+
+.tm-table {
+  font-size: 18px;
+  th {
+    font-size: 18px;
+    color: $global-color;
+    font-weight: bold;
+    text-transform: none;
+  }
+}
