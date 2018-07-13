@@ -55,6 +55,10 @@ header {
     text-transform: uppercase;
   }
 
+  .uk-navbar-toggle {
+    color: $global-color;
+  }
+
   .uk-navbar-nav {
     margin: -10px 0 0 40px;
 
@@ -378,5 +382,51 @@ footer {
     color: $global-color;
     font-weight: bold;
     text-transform: none;
+  }
+}
+
+.uk-light .uk-dotnav>*>* {
+  background-color: $default-color;
+  border-color: transparent;
+}
+
+.uk-light .uk-dotnav>.uk-active>* {
+  background-color: $secondary-color;
+  border-color: transparent;
+}
+
+.uk-light .uk-dotnav>*>:focus, .uk-light .uk-dotnav>*>:hover {
+  background-color: $secondary-color;
+  border-color: transparent;
+}
+
+.tm-slider-desc {
+  font-size: 18px;
+
+  h1 {
+    font-family: $global-font-family;
+    font-size: 35px;
+    color: $global-color;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    margin: 20px 0 0;
+  }
+
+  h2 {
+    font-family: $semibold-font-family;
+    font-size: 60px;
+    color: $secondary-color;
+    margin: 10px 0 0;
+  }
+
+  .tm-alt-button {
+    background: $primary-color;
+    height: 70px;
+
+    font-family: $semibold-font-family;
+    font-size: 24px;
+    color: $default-color;
+    line-height: 70px;
   }
 }
