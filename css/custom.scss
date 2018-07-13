@@ -377,11 +377,21 @@ footer {
 
 .tm-table {
   font-size: 18px;
+  border: 1px solid $global-color;
+
   th {
     font-size: 18px;
     color: $global-color;
     font-weight: bold;
     text-transform: none;
+  }
+
+  th + th, td + td {
+    border-left: 1px solid $global-color;
+  }
+
+  > :first-child > tr:not(:first-child), > :not(:first-child) > tr, > tr:not(:first-child) {
+    border-top-color: $global-color;
   }
 }
 
