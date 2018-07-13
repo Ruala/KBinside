@@ -286,9 +286,14 @@ footer {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 639px) {
 
   .tm-after-full::after {
     display: none;
+  }
+
+  .tm-slider-container{
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }

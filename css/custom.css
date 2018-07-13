@@ -214,8 +214,12 @@ footer {
 @media (max-width: 1199px) {
   .tm-margin-overtop {
     margin-top: 0; } }
-@media (max-width: 1199px) {
+@media (max-width: 639px) {
   .tm-after-full::after {
-    display: none; } }
+    display: none; }
+
+  .tm-slider-container {
+    max-width: 100%;
+    box-sizing: border-box; } }
 
 /*# sourceMappingURL=custom.css.map */
