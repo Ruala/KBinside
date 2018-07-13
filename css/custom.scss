@@ -385,6 +385,16 @@ footer {
   }
 }
 
+.uk-light .uk-dotnav {
+  background: rgba(0,0,0,0.3);
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  &:last-child {
+    padding-right: 12px;
+  }
+}
+
 .uk-light .uk-dotnav>*>* {
   background-color: $default-color;
   border-color: transparent;
