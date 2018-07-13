@@ -281,12 +281,17 @@ footer {
     align-items: center; } }
 
 .tm-table {
-  font-size: 18px; }
+  font-size: 18px;
+  border: 1px solid #000000; }
   .tm-table th {
     font-size: 18px;
     color: #000000;
     font-weight: bold;
     text-transform: none; }
+  .tm-table th + th, .tm-table td + td {
+    border-left: 1px solid #000000; }
+  .tm-table > :first-child > tr:not(:first-child), .tm-table > :not(:first-child) > tr, .tm-table > tr:not(:first-child) {
+    border-top-color: #000000; }
 
 .uk-light .uk-dotnav {
   background: rgba(0, 0, 0, 0.3);
