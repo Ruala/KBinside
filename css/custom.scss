@@ -211,11 +211,23 @@ header {
   .tm-button-select {
     a {
       background: $default-color;
+      border: solid 2px $global-color;
+      border-radius: 3px;
 
       font-size: $global-font-size;
       line-height: 2;
       color: $global-color;
       text-transform: none;
+
+
+    }
+
+    &.uk-active {
+      a {
+        background: $secondary-color;
+        border: solid 2px $secondary-color;
+      }
+
     }
   }
 
