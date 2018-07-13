@@ -14,7 +14,7 @@ h1 {
   font-size: 56px;
   letter-spacing: -3px;
   line-height: 1;
-  //margin: 0 0 20px;
+  margin: 0 0 20px;
 }
 
 header {
@@ -35,6 +35,13 @@ header {
       padding: 0 10px;
       height: 129px;
       transform: skew(15deg);
+      &.uk-active {
+        background: $secondary-color;
+      }
+      &:hover {
+        background: $secondary-color;
+        transition: all 0.5s ease;
+      }
 
       span {
         font-family: $global-font-family;
@@ -46,6 +53,14 @@ header {
       }
     }
   }
+}
+
+.tm-margin-overtop {
+margin-top: -50px;
+}
+
+.tm-z-1000 {
+  z-index: 1000;
 }
 
 .uk-width-large {

@@ -39,7 +39,8 @@ h1 {
   color: #ffffff;
   font-size: 56px;
   letter-spacing: -3px;
-  line-height: 1; }
+  line-height: 1;
+  margin: 0 0 20px; }
 
 header h4, header span {
   font-family: "nerisblack", sans-serif;
@@ -54,6 +55,11 @@ header .uk-navbar-nav {
     padding: 0 10px;
     height: 129px;
     transform: skew(15deg); }
+    header .uk-navbar-nav a.uk-active {
+      background: #f8b523; }
+    header .uk-navbar-nav a:hover {
+      background: #f8b523;
+      transition: all 0.5s ease; }
     header .uk-navbar-nav a span {
       font-family: "nerislight", sans-serif;
       font-size: 23px;
@@ -61,6 +67,12 @@ header .uk-navbar-nav {
       text-transform: uppercase;
       line-height: 1.2;
       transform: skew(-15deg); }
+
+.tm-margin-overtop {
+  margin-top: -50px; }
+
+.tm-z-1000 {
+  z-index: 1000; }
 
 .uk-width-large {
   width: 560px; }
