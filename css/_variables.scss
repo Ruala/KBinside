@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'nerissemibold';
+  src: url('../fonts/Neris-SemiBold-webfont.eot');
+  src: url('../fonts/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Neris-SemiBold-webfont.woff') format('woff'),
+  url('../fonts/Neris-SemiBold-webfont.ttf') format('truetype'),
+  url('../fonts/Neris-SemiBold-webfont.svg#nerissemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nerisblack';
+  src: url('../fonts/Neris-Black-webfont.eot');
+  src: url('../fonts/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Neris-Black-webfont.woff') format('woff'),
+  url('../fonts/Neris-Black-webfont.ttf') format('truetype'),
+  url('../fonts/Neris-Black-webfont.svg#nerisblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nerislight';
+  src: url('../fonts/Neris-Light-webfont.eot');
+  src: url('../fonts/Neris-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Neris-Light-webfont.woff') format('woff'),
+  url('../fonts/Neris-Light-webfont.ttf') format('truetype'),
+  url('../fonts/Neris-Light-webfont.svg#nerislight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neristhin';
+  src: url('../fonts/Neris-Thin-webfont.eot');
+  src: url('../fonts/Neris-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Neris-Thin-webfont.woff') format('woff'),
+  url('../fonts/Neris-Thin-webfont.ttf') format('truetype'),
+  url('../fonts/Neris-Thin-webfont.svg#neristhin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$global-font-family: 'nerislight', sans-serif;
+$semibold-font-family: 'nerissemibold', sans-serif; //some headers
+$thin-font-family: 'neristhin', sans-serif; //some headers
+$black-font-family: 'nerisblack', sans-serif; //capitalized letters
+
+$awesome-font-family: 'FontAwesome', sans-serif;
+
+
+$global-color: #000000;
+$alt-global-color: #575757;
+
+$primary-color: #3a3987;
+$alt-primary-color: #37368a;
+
+$secondary-color: #f8b523;
+$alt-secondary-color: #ffb700;
+
+$default-color: #ffffff;
+
+//$large-font-size: 18px;
+$global-font-size: 16px;
+//$small-font-size: 14px;
+
+//encountered font sizes on main page: 13,14,16,17,18,21,22,23,28,34,48,52,56,65,132
+//encountered font sizes in psd: 16,20
