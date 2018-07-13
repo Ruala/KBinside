@@ -162,8 +162,10 @@ header .uk-navbar-nav {
 
 .tm-switcher-trailers .tm-reset-all a {
   background: #ffffff;
+  border: solid 2px transparent;
+  margin-top: 15px;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 2;
   color: #666666;
   text-transform: none; }
 .tm-switcher-trailers .tm-button-select a {

@@ -200,9 +200,11 @@ header {
   .tm-reset-all {
     a {
       background: $default-color;
+      border: solid 2px transparent;
+      margin-top: 15px;
 
       font-size: 20px;
-      line-height: 1.6;
+      line-height: 2;
       color: #666666;
       text-transform: none;
     }
