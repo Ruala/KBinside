@@ -200,11 +200,23 @@ header {
   .tm-reset-all {
     a {
       background: $default-color;
+
+      font-size: 20px;
+      line-height: 1.6;
       color: #666666;
+      text-transform: none;
     }
   }
 
-  a {
+  .tm-button-select {
+    a {
+      background: $default-color;
 
+      font-size: $global-font-size;
+      line-height: 2;
+      color: $global-color;
+      text-transform: none;
+    }
   }
+
 }

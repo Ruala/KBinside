@@ -162,6 +162,9 @@ header .uk-navbar-nav {
 
 .tm-switcher-trailers .tm-reset-all a {
   background: #ffffff;
-  color: #666666; }
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666666;
+  text-transform: none; }
 
 /*# sourceMappingURL=custom.css.map */
