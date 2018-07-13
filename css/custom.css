@@ -33,25 +33,46 @@ body {
   font-size: 16px;
   color: #000000; }
 
+h1 {
+  font-family: "neristhin", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 56px;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin: 0 0 20px; }
+
 header h4, header span {
   font-family: "nerisblack", sans-serif;
   font-size: 13px;
   color: #f8b523;
   text-transform: uppercase; }
 header .uk-navbar-nav {
-  margin: -10px 0 0 -40px; }
+  margin: -10px 0 0 40px; }
   header .uk-navbar-nav a {
     margin: 0 19px 0 0;
     background: #575757;
     padding: 0 10px;
     height: 129px;
     transform: skew(15deg); }
+    header .uk-navbar-nav a.uk-active {
+      background: #f8b523; }
+    header .uk-navbar-nav a:hover {
+      background: #f8b523;
+      transition: all 0.5s ease; }
     header .uk-navbar-nav a span {
       font-family: "nerislight", sans-serif;
       font-size: 23px;
       color: #ffffff;
       text-transform: uppercase;
-      line-height: 1.2; }
+      line-height: 1.2;
+      transform: skew(-15deg); }
+
+.tm-margin-overtop {
+  margin-top: -50px; }
+
+.tm-z-1000 {
+  z-index: 1000; }
 
 .uk-width-large {
   width: 560px; }
@@ -61,6 +82,32 @@ header .uk-navbar-nav {
 
 .tm-background-default {
   background-color: #ffffff; }
+
+.tm-pageheader {
+  background: rgba(58, 57, 135, 0.65);
+  padding-left: 0; }
+  .tm-pageheader .uk-subnav {
+    margin-left: 0; }
+  .tm-pageheader .uk-subnav > * {
+    padding-left: 30px; }
+  .tm-pageheader ul {
+    background: #3a3987; }
+  .tm-pageheader span {
+    font-family: "nerisblack", sans-serif;
+    font-size: 17px;
+    text-transform: uppercase; }
+
+.uk-light .uk-subnav > * > :first-child, .uk-subnav > * > :first-child {
+  color: #ffffff; }
+
+.tm-button-secondary {
+  background-color: #f8b523;
+  font-family: "nerisblack", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 2px; }
 
 .tm-font-large {
   font-size: 18px; }
