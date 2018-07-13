@@ -54,29 +54,33 @@ header span, footer span {
   font-size: 13px;
   color: #f8b523; }
 
-header span {
-  font-family: "nerisblack", sans-serif;
-  text-transform: uppercase; }
-header .uk-navbar-nav {
-  margin: -10px 0 0 40px; }
-  header .uk-navbar-nav a {
-    margin: 0 19px 0 0;
-    background: #575757;
-    padding: 0 10px;
-    height: 129px;
-    transform: skew(15deg); }
-    header .uk-navbar-nav a.uk-active {
-      background: #f8b523; }
-    header .uk-navbar-nav a:hover {
-      background: #f8b523;
-      transition: all 0.5s ease; }
-    header .uk-navbar-nav a span {
-      font-family: "nerislight", sans-serif;
-      font-size: 23px;
-      color: #ffffff;
-      text-transform: uppercase;
-      line-height: 1.2;
-      transform: skew(-15deg); }
+header {
+  overflow: hidden; }
+  header span {
+    font-family: "nerisblack", sans-serif;
+    text-transform: uppercase; }
+  header .uk-navbar-nav {
+    margin: -10px 0 0 40px; }
+    header .uk-navbar-nav a {
+      margin: 0 19px 0 0;
+      background: #575757;
+      padding: 0 10px;
+      height: 129px;
+      transform: skew(15deg); }
+      header .uk-navbar-nav a.uk-active {
+        background: #f8b523; }
+      header .uk-navbar-nav a:hover {
+        background: #f8b523;
+        transition: all 0.5s ease; }
+      header .uk-navbar-nav a span {
+        font-family: "nerislight", sans-serif;
+        font-size: 23px;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 1.2;
+        transform: skew(-15deg); }
+  header .uk-logo {
+    display: block; }
 
 footer {
   font-size: 21px; }
@@ -84,7 +88,7 @@ footer {
     font-size: 18px; }
 
 .tm-margin-overtop {
-  margin-top: -50px; }
+  margin-top: -70px; }
 
 .tm-z-1000 {
   z-index: 1000; }
@@ -98,9 +102,20 @@ footer {
 .tm-background-default {
   background-color: #ffffff; }
 
+.tm-after-full {
+  position: relative; }
+  .tm-after-full::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    background-color: #ffffff; }
+
 .tm-pageheader {
-  background: rgba(58, 57, 135, 0.65);
-  padding-left: 0; }
+  background: rgba(58, 57, 135, 0.65); }
   .tm-pageheader .uk-subnav {
     margin-left: 0; }
   .tm-pageheader .uk-subnav > * {
@@ -194,5 +209,9 @@ footer {
 .tm-switcher-trailers .tm-button-select.uk-active a {
   background: #f8b523;
   border: solid 2px #f8b523; }
+
+@media (max-width: 1199px) {
+  .tm-margin-overtop {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=custom.css.map */
