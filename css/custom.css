@@ -160,4 +160,8 @@ header .uk-navbar-nav {
   border: none;
   color: #3a3987; }
 
+.tm-switcher-trailers .tm-reset-all a {
+  background: #ffffff;
+  color: #666666; }
+
 /*# sourceMappingURL=custom.css.map */

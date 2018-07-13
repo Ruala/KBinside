@@ -175,7 +175,7 @@ header {
       line-height: 2;
       border: none;
       outline: none;
-      display:flex;
+      display: flex;
       align-items: center;
 
       &:hover {
@@ -186,7 +186,6 @@ header {
 
     &.uk-active {
 
-
       a {
         background-color: $default-color;
         border: none;
@@ -194,5 +193,18 @@ header {
       }
     }
   }
+}
 
+.tm-switcher-trailers {
+
+  .tm-reset-all {
+    a {
+      background: $default-color;
+      color: #666666;
+    }
+  }
+
+  a {
+
+  }
 }
