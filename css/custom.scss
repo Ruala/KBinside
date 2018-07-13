@@ -256,7 +256,11 @@ footer {
 .tm-switcher-trailers {
 
   .tm-reset-all {
-    padding: 0;
+
+    @media (max-width: 639px) {
+      padding: 0; //test
+    }
+
     a {
       background: $default-color;
       border: solid 2px transparent;

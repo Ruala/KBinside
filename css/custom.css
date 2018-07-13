@@ -201,19 +201,20 @@ footer {
   border: none;
   color: #3a3987; }
 
-.tm-switcher-trailers .tm-reset-all {
-  padding: 0; }
-  .tm-switcher-trailers .tm-reset-all a {
-    background: #ffffff;
-    border: solid 2px transparent;
-    margin-top: 15px;
-    font-size: 20px;
-    line-height: 2;
-    color: #666666;
-    text-transform: none; }
-    .tm-switcher-trailers .tm-reset-all a:hover, .tm-switcher-trailers .tm-reset-all a:focus {
-      background: #f8b523;
-      border: solid 2px #f8b523; }
+@media (max-width: 639px) {
+  .tm-switcher-trailers .tm-reset-all {
+    padding: 0; } }
+.tm-switcher-trailers .tm-reset-all a {
+  background: #ffffff;
+  border: solid 2px transparent;
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 2;
+  color: #666666;
+  text-transform: none; }
+  .tm-switcher-trailers .tm-reset-all a:hover, .tm-switcher-trailers .tm-reset-all a:focus {
+    background: #f8b523;
+    border: solid 2px #f8b523; }
 .tm-switcher-trailers .tm-button-select a {
   background: #ffffff;
   border: solid 2px #000000;
