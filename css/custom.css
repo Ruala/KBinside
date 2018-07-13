@@ -68,6 +68,8 @@ header {
   header span {
     font-family: "nerisblack", sans-serif;
     text-transform: uppercase; }
+  header .uk-navbar-toggle {
+    color: #000000; }
   header .uk-navbar-nav {
     margin: -10px 0 0 40px; }
     header .uk-navbar-nav a {
