@@ -193,6 +193,10 @@ footer {
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 2px;
+
+  &:hover {
+    background-color: $primary-color;
+  }
 }
 
 .tm-font-large {
@@ -231,9 +235,12 @@ footer {
   }
 
   li {
+    box-sizing: border-box;
+    max-width: 100%;
 
     a {
       height: 100px;
+      padding: 5px 20px;
       font-family: $semibold-font-family;
       font-size: $global-font-size;
       color: $default-color;
@@ -278,10 +285,11 @@ footer {
     a {
       background: $default-color;
       border: solid 2px transparent;
+      transition-property: all;
       //margin-top: 15px;
 
       font-size: 20px;
-      line-height: 2;
+      line-height: 32px;
       color: #666666;
       text-transform: none;
 
@@ -300,11 +308,13 @@ footer {
       background: $default-color;
       border: solid 2px $global-color;
       border-radius: 3px;
+      transition-property: all;
 
       font-size: $global-font-size;
-      line-height: 2;
+      line-height: 32px;
       color: $global-color;
       text-transform: none;
+      text-align: center;
 
       &:hover, &:focus {
         background: $secondary-color;

@@ -168,6 +168,8 @@ footer {
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 2px; }
+  .tm-button-secondary:hover {
+    background-color: #3a3987; }
 
 .tm-font-large {
   font-size: 18px; }
@@ -189,27 +191,31 @@ footer {
 
 .tm-tab::before {
   display: none; }
-.tm-tab li a {
-  height: 100px;
-  font-family: "nerissemibold", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 2;
-  border: none;
-  outline: none;
-  display: flex;
-  align-items: center; }
-  .tm-tab li a:hover {
+.tm-tab li {
+  box-sizing: border-box;
+  max-width: 100%; }
+  .tm-tab li a {
+    height: 100px;
+    padding: 5px 20px;
+    font-family: "nerissemibold", sans-serif;
+    font-size: 16px;
     color: #ffffff;
-    border: none; }
-  @media (max-width: 1199px) {
-    .tm-tab li a {
-      height: 50px;
-      font-size: 14px; } }
-.tm-tab li.uk-active a {
-  background-color: #ffffff;
-  border: none;
-  color: #3a3987; }
+    line-height: 2;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center; }
+    .tm-tab li a:hover {
+      color: #ffffff;
+      border: none; }
+    @media (max-width: 1199px) {
+      .tm-tab li a {
+        height: 50px;
+        font-size: 14px; } }
+  .tm-tab li.uk-active a {
+    background-color: #ffffff;
+    border: none;
+    color: #3a3987; }
 
 @media (max-width: 639px) {
   .tm-switcher-trailers .tm-reset-all {
@@ -219,8 +225,9 @@ footer {
 .tm-switcher-trailers .tm-reset-all a {
   background: #ffffff;
   border: solid 2px transparent;
+  transition-property: all;
   font-size: 20px;
-  line-height: 2;
+  line-height: 32px;
   color: #666666;
   text-transform: none; }
   .tm-switcher-trailers .tm-reset-all a:hover, .tm-switcher-trailers .tm-reset-all a:focus {
@@ -233,10 +240,12 @@ footer {
   background: #ffffff;
   border: solid 2px #000000;
   border-radius: 3px;
+  transition-property: all;
   font-size: 16px;
-  line-height: 2;
+  line-height: 32px;
   color: #000000;
-  text-transform: none; }
+  text-transform: none;
+  text-align: center; }
   .tm-switcher-trailers .tm-button-select a:hover, .tm-switcher-trailers .tm-button-select a:focus {
     background: #f8b523;
     border: solid 2px #f8b523; }
