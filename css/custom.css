@@ -88,6 +88,8 @@ header .uk-navbar-nav {
   padding-left: 0; }
   .tm-pageheader .uk-subnav {
     margin-left: 0; }
+  .tm-pageheader .uk-subnav > * {
+    padding-left: 30px; }
   .tm-pageheader ul {
     background: #3a3987; }
   .tm-pageheader span {
