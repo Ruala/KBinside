@@ -41,6 +41,10 @@ h1 {
   letter-spacing: -3px;
   line-height: 1;
   margin: 0 0 20px; }
+  @media (max-width: 639px) {
+    h1 {
+      font-size: 18px;
+      letter-spacing: 0; } }
 
 a:hover {
   text-decoration: none; }
@@ -203,11 +207,12 @@ footer {
 
 @media (max-width: 639px) {
   .tm-switcher-trailers .tm-reset-all {
-    padding: 0; } }
+    padding: 0;
+    width: 100%;
+    text-align: center; } }
 .tm-switcher-trailers .tm-reset-all a {
   background: #ffffff;
   border: solid 2px transparent;
-  margin-top: 15px;
   font-size: 20px;
   line-height: 2;
   color: #666666;
@@ -215,6 +220,9 @@ footer {
   .tm-switcher-trailers .tm-reset-all a:hover, .tm-switcher-trailers .tm-reset-all a:focus {
     background: #f8b523;
     border: solid 2px #f8b523; }
+@media (max-width: 639px) {
+  .tm-switcher-trailers .tm-button-select {
+    width: 100%; } }
 .tm-switcher-trailers .tm-button-select a {
   background: #ffffff;
   border: solid 2px #000000;
