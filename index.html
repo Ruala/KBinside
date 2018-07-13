@@ -148,11 +148,11 @@
             <div class="tm-background-primary">
                 <div class="uk-container">
                     <!-- This is the nav containing the toggling elements -->
-                    <ul class="tm-tab uk-margin-top" uk-tab uk-switcher="content: .tm-switcher-trailers">
-                        <li><a href="#"><span>All Camper Trailers</span></a></li>
-                        <li><a href="#"><span>Forward Folding Camper Trailers</span></a></li>
-                        <li><a href="#"><span>Hard floor camper trailers</span></a></li>
-                        <li><a href="#"><span>Soft floor camper trailers</span></a></li>
+                    <ul class="tm-tab uk-margin-top" uk-tab="connect: .tm-switcher-trailers; animation: uk-animation-fade">
+                        <li><a href="#">All Camper Trailers</a></li>
+                        <li><a href="#">Forward Folding Camper Trailers</a></li>
+                        <li><a href="#">Hard floor camper trailers</a></li>
+                        <li><a href="#">Soft floor camper trailers</a></li>
                     </ul>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                 <div class="uk-container">
                     <!-- This is the container of the content items -->
                     <ul class="tm-switcher-trailers uk-switcher">
-                        <li class="uk-active">
+                        <li>
                             <div uk-filter="target: .js-filter-all-trailers">
                                 <!-- Filter controls -->
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
@@ -316,7 +316,7 @@
                             </div>
                         </li>
 
-                        <li class="uk-active">
+                        <li>
                             <div uk-filter="target: .js-filter-forward-trailers">
                                 <!-- Filter controls -->
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
@@ -471,7 +471,7 @@
                             </div>
                         </li>
 
-                        <li class="uk-active">
+                        <li>
                             <div uk-filter="target: .js-filter-hard-trailers">
                                 <!-- Filter controls -->
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
@@ -626,7 +626,7 @@
                             </div>
                         </li>
 
-                        <li class="uk-active">
+                        <li>
                             <div uk-filter="target: .js-filter-soft-trailers">
                                 <!-- Filter controls -->
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
