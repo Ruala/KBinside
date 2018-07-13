@@ -1,50 +1,7 @@
 @import "fonts";
 @import "variables";
 
-body {
-  font-family: $global-font-family;
-  font-size: $global-font-size;
-  color: $global-color;
-}
 
-header {
-
-  h4, span {
-    font-family: $black-font-family;
-    font-size: 13px;
-    color: $secondary-color;
-    text-transform: uppercase;
-  }
-
-  .uk-navbar-nav {
-    margin: -10px 0 0 -40px;
-
-    a {
-      margin: 0 19px 0 0;
-      background: #575757;
-      padding: 0 10px;
-      height: 129px;
-      transform: skew(15deg);
-
-      span {
-        font-family: $global-font-family;
-        font-size: 23px;
-        color: $default-color;
-        text-transform: uppercase;
-        line-height: 1.2;
-      }
-    }
-  }
-}
-
-.tm-background-primary {
-  background-color: $primary-color;
-}
-
-.tm-background-default {
-  background-color: $default-color;
-}
-
-.tm-font-large {
-  font-size: $large-font-size;
+.uk-width-large {
+  width: 560px;
 }

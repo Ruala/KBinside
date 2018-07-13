@@ -28,38 +28,7 @@
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-body {
-  font-family: "nerislight", sans-serif;
-  font-size: 16px;
-  color: #000000; }
-
-header h4, header span {
-  font-family: "nerisblack", sans-serif;
-  font-size: 13px;
-  color: #f8b523;
-  text-transform: uppercase; }
-header .uk-navbar-nav {
-  margin: -10px 0 0 -40px; }
-  header .uk-navbar-nav a {
-    margin: 0 19px 0 0;
-    background: #575757;
-    padding: 0 10px;
-    height: 129px;
-    transform: skew(15deg); }
-    header .uk-navbar-nav a span {
-      font-family: "nerislight", sans-serif;
-      font-size: 23px;
-      color: #ffffff;
-      text-transform: uppercase;
-      line-height: 1.2; }
-
-.tm-background-primary {
-  background-color: #3a3987; }
-
-.tm-background-default {
-  background-color: #ffffff; }
-
-.tm-font-large {
-  font-size: 18px; }
+.uk-width-large {
+  width: 560px; }
 
 /*# sourceMappingURL=custom.css.map */
