@@ -22,6 +22,12 @@ h1 {
   }
 }
 
+h3 {
+  font-family: $semibold-font-family;
+  font-size: 30px;
+  color: $global-color;
+}
+
 a:hover {
   text-decoration: none;
 }

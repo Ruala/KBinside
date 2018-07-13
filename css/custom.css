@@ -46,6 +46,11 @@ h1 {
       font-size: 18px;
       letter-spacing: 0; } }
 
+h3 {
+  font-family: "nerissemibold", sans-serif;
+  font-size: 30px;
+  color: #000000; }
+
 a:hover {
   text-decoration: none; }
 
