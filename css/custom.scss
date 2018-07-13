@@ -101,12 +101,28 @@ margin-top: -50px;
     color: $default-color;
 }
 
-.tm-button-secondary{
-  background-color: #f8b523;
+.tm-button-primary {
+  background-color: $primary-color;
+
+  font-family: $semibold-font-family;
+  font-size: $global-font-size;
+  color: $default-color;
+  transition: all 0.5s ease;
+  text-transform: none;
+
+  &:hover {
+    background-color: #333333;
+
+    color: $default-color;
+  }
+}
+
+.tm-button-secondary {
+  background-color: $secondary-color;
 
   font-family: $black-font-family;
   font-size: 14px;
-  color: #ffffff;
+  color: $default-color;
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 2px;
@@ -116,3 +132,27 @@ margin-top: -50px;
   font-size: $large-font-size;
 }
 
+.tm-product-caption {
+h3 {
+  margin: 0;
+
+  font-family: $semibold-font-family;
+  font-size: 1.17em; //или 15px?
+  text-transform: uppercase;
+  font-weight: normal;
+
+  a{
+    color: $primary-color;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: #888888;
+    }
+  }
+}
+
+  .tm-price {
+    font-family: $black-font-family;
+    font-size: 21px;
+  }
+}

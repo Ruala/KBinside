@@ -100,6 +100,17 @@ header .uk-navbar-nav {
 .uk-light .uk-subnav > * > :first-child, .uk-subnav > * > :first-child {
   color: #ffffff; }
 
+.tm-button-primary {
+  background-color: #3a3987;
+  font-family: "nerissemibold", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  text-transform: none; }
+  .tm-button-primary:hover {
+    background-color: #333333;
+    color: #ffffff; }
+
 .tm-button-secondary {
   background-color: #f8b523;
   font-family: "nerisblack", sans-serif;
@@ -111,5 +122,20 @@ header .uk-navbar-nav {
 
 .tm-font-large {
   font-size: 18px; }
+
+.tm-product-caption h3 {
+  margin: 0;
+  font-family: "nerissemibold", sans-serif;
+  font-size: 1.17em;
+  text-transform: uppercase;
+  font-weight: normal; }
+  .tm-product-caption h3 a {
+    color: #3a3987;
+    transition: all 0.5s ease; }
+    .tm-product-caption h3 a:hover {
+      color: #888888; }
+.tm-product-caption .tm-price {
+  font-family: "nerisblack", sans-serif;
+  font-size: 21px; }
 
 /*# sourceMappingURL=custom.css.map */
