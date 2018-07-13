@@ -56,7 +56,7 @@ header {
 }
 
 .tm-margin-overtop {
-margin-top: -50px;
+  margin-top: -50px;
 }
 
 .tm-z-1000 {
@@ -76,14 +76,14 @@ margin-top: -50px;
 }
 
 .tm-pageheader {
-  background: rgba(58,57,135,0.65);
+  background: rgba(58, 57, 135, 0.65);
   padding-left: 0;
 
   .uk-subnav {
     margin-left: 0;
   }
 
-  .uk-subnav>* {
+  .uk-subnav > * {
     padding-left: 30px;
   }
 
@@ -97,8 +97,8 @@ margin-top: -50px;
   }
 }
 
-.uk-light .uk-subnav>*>:first-child, .uk-subnav>*>:first-child {
-    color: $default-color;
+.uk-light .uk-subnav > * > :first-child, .uk-subnav > * > :first-child {
+  color: $default-color;
 }
 
 .tm-button-primary {
@@ -136,26 +136,50 @@ margin-top: -50px;
 }
 
 .tm-product-caption {
-h3 {
-  margin: 0;
+  h3 {
+    margin: 0;
 
-  font-family: $semibold-font-family;
-  font-size: 1.17em; //или 15px?
-  text-transform: uppercase;
-  font-weight: normal;
+    font-family: $semibold-font-family;
+    font-size: 1.17em; //или 15px?
+    text-transform: uppercase;
+    font-weight: normal;
 
-  a{
-    color: $primary-color;
-    transition: all 0.5s ease;
+    a {
+      color: $primary-color;
+      transition: all 0.5s ease;
 
-    &:hover {
-      color: #888888;
+      &:hover {
+        color: #888888;
+      }
     }
   }
-}
 
   .tm-price {
     font-family: $black-font-family;
     font-size: 21px;
   }
+}
+
+.tm-tab {
+  li {
+    height: 100px;
+    cursor: pointer;
+
+    a {
+      font-family: $semibold-font-family;
+      font-size: $global-font-size;
+      color: $default-color;
+      line-height: 2;
+    }
+
+    &.uk-active {
+      background-color: $default-color;
+
+      a {
+        border: none;
+        color: $primary-color;
+      }
+    }
+  }
+
 }
