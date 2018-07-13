@@ -73,7 +73,8 @@ header {
   }
 
   .uk-logo {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
@@ -282,5 +283,12 @@ footer {
 
   .tm-margin-overtop {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .tm-after-full::after {
+    display: none;
   }
 }
