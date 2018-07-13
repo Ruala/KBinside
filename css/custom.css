@@ -101,6 +101,17 @@ footer {
 .tm-pageheader {
   background: rgba(58, 57, 135, 0.65);
   padding-left: 0; }
+  .tm-pageheader .tm-subnav-divider li:after {
+    content: '\f111';
+    font-family: "FontAwesome";
+    font-size: 10px;
+    position: absolute;
+    right: -15px;
+    top: 7px;
+    color: #f8b523; }
+  .tm-pageheader .tm-subnav-divider > * {
+    display: flex;
+    align-items: center; }
   .tm-pageheader .uk-subnav {
     margin-left: 0; }
   .tm-pageheader .uk-subnav > * {
@@ -130,6 +141,7 @@ footer {
 
 .tm-button-secondary {
   background-color: #f8b523;
+  padding: 10px 30px;
   font-family: "nerisblack", sans-serif;
   font-size: 14px;
   color: #ffffff;
@@ -170,6 +182,9 @@ footer {
   .tm-tab li a:hover {
     color: #ffffff;
     border: none; }
+  @media (max-width: 1199px) {
+    .tm-tab li a {
+      height: 50px; } }
 .tm-tab li.uk-active a {
   background-color: #ffffff;
   border: none;
@@ -191,8 +206,21 @@ footer {
   line-height: 2;
   color: #000000;
   text-transform: none; }
+  .tm-switcher-trailers .tm-button-select a:hover, .tm-switcher-trailers .tm-button-select a:focus {
+    background: #f8b523;
+    border: solid 2px #f8b523; }
 .tm-switcher-trailers .tm-button-select.uk-active a {
   background: #f8b523;
   border: solid 2px #f8b523; }
+
+.tm-copyright {
+  background: #272640;
+  padding: 5px 0;
+  font-family: "neristhin", sans-serif;
+  font-size: 14px;
+  color: #bbb; }
+  .tm-copyright a {
+    font-family: "nerissemibold", sans-serif;
+    color: #efefef; }
 
 /*# sourceMappingURL=custom.css.map */

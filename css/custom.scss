@@ -23,11 +23,11 @@ a:hover {
 
 header, footer {
 
-    h4 {
-      font-family: $black-font-family;
-      font-size: 13px;
-      color: $secondary-color;
-      text-transform: uppercase;
+  h4 {
+    font-family: $black-font-family;
+    font-size: 13px;
+    color: $secondary-color;
+    text-transform: uppercase;
   }
 
   span {
@@ -79,6 +79,7 @@ footer {
     font-size: 18px;
   }
 }
+
 .tm-margin-overtop {
   margin-top: -50px;
 }
@@ -102,6 +103,23 @@ footer {
 .tm-pageheader {
   background: rgba(58, 57, 135, 0.65);
   padding-left: 0;
+
+  .tm-subnav-divider {
+    li:after {
+        content: '\f111';
+        font-family: $awesome-font-family;
+        font-size: 10px;
+        position: absolute;
+        right: -15px;
+        top: 7px;
+        color: $secondary-color;
+      }
+    }
+
+  .tm-subnav-divider>* {
+    display: flex;
+    align-items: center;
+  }
 
   .uk-subnav {
     margin-left: 0;
@@ -145,6 +163,7 @@ footer {
 
 .tm-button-secondary {
   background-color: $secondary-color;
+  padding: 10px 30px;
 
   font-family: $black-font-family;
   font-size: 14px;
@@ -206,6 +225,10 @@ footer {
         color: $default-color;
         border: none;
       }
+
+      @media (max-width: 1199px) {
+        height: 50px;
+      }
     }
 
     &.uk-active {
@@ -245,7 +268,10 @@ footer {
       color: $global-color;
       text-transform: none;
 
-
+      &:hover, &:focus {
+        background: $secondary-color;
+        border: solid 2px $secondary-color;
+      }
     }
 
     &.uk-active {
@@ -253,8 +279,20 @@ footer {
         background: $secondary-color;
         border: solid 2px $secondary-color;
       }
-
     }
   }
+}
 
+.tm-copyright {
+  background: #272640;
+  padding: 5px 0;
+
+  font-family: $thin-font-family;
+  font-size: 14px;
+  color: #bbb;
+
+  a {
+    font-family: $semibold-font-family;
+    color: #efefef;
+  }
 }
