@@ -149,7 +149,9 @@ header .uk-navbar-nav {
   color: #ffffff;
   line-height: 2;
   border: none;
-  outline: none; }
+  outline: none;
+  display: flex;
+  align-items: center; }
   .tm-tab li a:hover {
     color: #ffffff;
     border: none; }

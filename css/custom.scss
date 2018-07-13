@@ -175,6 +175,8 @@ header {
       line-height: 2;
       border: none;
       outline: none;
+      display:flex;
+      align-items: center;
 
       &:hover {
         color: $default-color;
